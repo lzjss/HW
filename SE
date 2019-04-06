@@ -1,0 +1,80 @@
+package hw;
+public class HW18_5 {
+	public static void Calculus (double time, double intialy_value ) 
+	{
+		double y_value = intialy_value;
+		double height = 0.01;
+		int index = 1;
+		do 
+		{
+			double slopefunction = y_value *(2-y_value);
+			System.out.println("This is the test " + index + " for time= " + time + " | y value= " + y_value +"| the slope is " +slopefunction);
+			
+			time = time + 0.01;
+			y_value = y_value + (height * (slopefunction));
+			index++;
+			
+		} while (index<51);
+	}//end method
+
+	public static void main(String[] args) 
+	{
+		//initial the variables
+		double time = 0.5;
+		double y_value= 1;
+		//call the method Calculus 
+		Calculus(time, y_value);
+	}//end main
+}//end class
+/*
+This is the test 1 for time= 0.5 | y value= 1.0| the slope is 1.0
+This is the test 2 for time= 0.51 | y value= 1.01| the slope is 0.9999
+This is the test 3 for time= 0.52 | y value= 1.019999| the slope is 0.999600039999
+This is the test 4 for time= 0.53 | y value= 1.02999500039999| the slope is 0.9991002999510046
+This is the test 5 for time= 0.54 | y value= 1.0399860033995| the slope is 0.9984011195321352
+This is the test 6 for time= 0.55 | y value= 1.0499700145948214| the slope is 0.9975029976413934
+This is the test 7 for time= 0.56 | y value= 1.0599450445712353| the slope is 0.9964065916313526
+This is the test 8 for time= 0.5700000000000001 | y value= 1.0699091104875489| the slope is 0.9951127162708396
+This is the test 9 for time= 0.5800000000000001 | y value= 1.0798602376502573| the slope is 0.9936223424424444
+This is the test 10 for time= 0.5900000000000001 | y value= 1.0897964610746818| the slope is 0.9919365955784631
+This is the test 11 for time= 0.6000000000000001 | y value= 1.0997158270304663| the slope is 0.9900567538396301
+This is the test 12 for time= 0.6100000000000001 | y value= 1.1096163945688626| the slope is 0.9879842460417234
+This is the test 13 for time= 0.6200000000000001 | y value= 1.1194962370292798| the slope is 0.9857206493358421
+This is the test 14 for time= 0.6300000000000001 | y value= 1.1293534435226382| the slope is 0.9832676866488357
+This is the test 15 for time= 0.6400000000000001 | y value= 1.1391861203891265| the slope is 0.9806272238910236
+This is the test 16 for time= 0.6500000000000001 | y value= 1.1489923926280368| the slope is 0.977801266938973
+This is the test 17 for time= 0.6600000000000001 | y value= 1.1587704052974266| the slope is 0.9747919584016909
+This is the test 18 for time= 0.6700000000000002 | y value= 1.1685183248814435| the slope is 0.9716015741791523
+This is the test 19 for time= 0.6800000000000002 | y value= 1.178234340623235| the slope is 0.9682325198226006
+This is the test 20 for time= 0.6900000000000002 | y value= 1.187916665821461| the slope is 0.9646873267065453
+This is the test 21 for time= 0.7000000000000002 | y value= 1.1975635390885264| the slope is 0.9609686480228163
+This is the test 22 for time= 0.7100000000000002 | y value= 1.2071732255687546| the slope is 0.9570792546074379
+This is the test 23 for time= 0.7200000000000002 | y value= 1.216744018114829| the slope is 0.9530220306114386
+This is the test 24 for time= 0.7300000000000002 | y value= 1.2262742384209433| the slope is 0.9487999690270221
+This is the test 25 for time= 0.7400000000000002 | y value= 1.2357622381112134| the slope is 0.9444161670807915
+This is the test 26 for time= 0.7500000000000002 | y value= 1.2452063997820213| the slope is 0.9398738215059396
+This is the test 27 for time= 0.7600000000000002 | y value= 1.2546051379970806| the slope is 0.9351762237054876
+This is the test 28 for time= 0.7700000000000002 | y value= 1.2639569002341355| the slope is 0.9303267548187866
+This is the test 29 for time= 0.7800000000000002 | y value= 1.2732601677823234| the slope is 0.9253288807035764
+This is the test 30 for time= 0.7900000000000003 | y value= 1.2825134565893592| the slope is 0.9201861468459323
+This is the test 31 for time= 0.8000000000000003 | y value= 1.2917153180578185| the slope is 0.9149021732104258
+This is the test 32 for time= 0.8100000000000003 | y value= 1.3008643397899227| the slope is 0.9094806490427739
+This is the test 33 for time= 0.8200000000000003 | y value= 1.3099591462803504| the slope is 0.9039253276371564
+This is the test 34 for time= 0.8300000000000003 | y value= 1.318998399556722| the slope is 0.8982400210802499
+This is the test 35 for time= 0.8400000000000003 | y value= 1.3279807997675246| the slope is 0.892428594983855
+This is the test 36 for time= 0.8500000000000003 | y value= 1.3369050857173632| the slope is 0.8864949632177761
+This is the test 37 for time= 0.8600000000000003 | y value= 1.345770035349541| the slope is 0.8804430826543772
+This is the test 38 for time= 0.8700000000000003 | y value= 1.3545744661760848| the slope is 0.8742769479359445
+This is the test 39 for time= 0.8800000000000003 | y value= 1.3633172356554442| the slope is 0.8680005862756864
+This is the test 40 for time= 0.8900000000000003 | y value= 1.3719972415182011| the slope is 0.8616180523028492
+This is the test 41 for time= 0.9000000000000004 | y value= 1.3806134220412296| the slope is 0.8551334229620648
+This is the test 42 for time= 0.9100000000000004 | y value= 1.3891647562708502| the slope is 0.8485507924766498
+This is the test 43 for time= 0.9200000000000004 | y value= 1.3976502641956168| the slope is 0.8418742673851561
+This is the test 44 for time= 0.9300000000000004 | y value= 1.4060690068694683| the slope is 0.8351079616600436
+This is the test 45 for time= 0.9400000000000004 | y value= 1.4144200864860688| the slope is 0.8282559919168793
+This is the test 46 for time= 0.9500000000000004 | y value= 1.4227026464052375| the slope is 0.8213224727220088
+This is the test 47 for time= 0.9600000000000004 | y value= 1.4309158711324577| the slope is 0.8143115120061551
+This is the test 48 for time= 0.9700000000000004 | y value= 1.4390589862525192| the slope is 0.8072272065909102
+This is the test 49 for time= 0.9800000000000004 | y value= 1.4471312583184281| the slope is 0.8000736378345791
+This is the test 50 for time= 0.9900000000000004 | y value= 1.455131994696774| the slope is 0.7928548674033357
+*/
